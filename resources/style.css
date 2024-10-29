@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: azure;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 1.50rem;
+    background-color: #98c5e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo */
+.logo{
+    display: inline-block;
+    width: 5.25rem;
+    height: 5.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Nav Bar */
+
+.navbar a{
+    position: relative;
+    font-family: "Encode Sans Condensed", serif;
+    font-size: 18px;
+    color: #001838;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-weight: 700;
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #001838;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/* Body */
+
+/* Main content styling */
+main {
+    padding: 7rem 2rem 2rem;
+}
+
+.history h1 {
+    font-size: 2.5rem;
+    color: #001838;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.history p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Slider Styling */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 3rem auto;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Adding a blur effect on hover */
+.slide img:hover {
+    transform: scale(1.05);
+    filter: blur(2px);
+}
+
+/* Player Section */
+
+.players-section {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #001838;
+}
+
+.player-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f6fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.player-card img {
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.player-info {
+    text-align: left;
+}
+
+.player-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0072C6;
+}
+
+.player-info p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #0072C6;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0059a6;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #98c5e9;
+    padding: 1.5rem;
+    text-align: center;
+    color: #001838;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #001838;
+}
+
+.footer-nav a {
+    color: #001838;
+    margin: 0 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
